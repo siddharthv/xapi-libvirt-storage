@@ -1,5 +1,5 @@
 # OPAM packages needed to build tests.
-OPAM_PACKAGES="libvirt xcp re rpc cmdliner cohttp obuild"
+OPAM_PACKAGES="xcp re rpc cmdliner cohttp obuild"
 
 
 case "$OCAML_VERSION,$OPAM_VERSION" in
@@ -14,7 +14,7 @@ esac
 
 echo "yes" | sudo add-apt-repository ppa:$ppa
 sudo apt-get update -qq
-sudo apt-get install -qq libvirt-dev ocaml ocaml-native-compilers camlp4-extra opam
+sudo apt-get install -qq libvirt-dev ocaml ocaml-native-compilers camlp4-extra opam qemu-kvm
 export OPAMYES=1
 export OPAMVERBOSE=1
 echo OCaml version
