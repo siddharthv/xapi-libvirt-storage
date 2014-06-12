@@ -24,7 +24,7 @@ opam --version
 opam --git-version
 
 opam init 
-opam remote add xapi-project git@github.com:xapi-project/opam-repo-dev.git
+opam remote add xapi-project https://github.com/xapi-project/opam-repo-dev.git
 opam install ${OPAM_PACKAGES}
 
 eval `opam config -env`
